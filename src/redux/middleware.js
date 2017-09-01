@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const api = axios;
 const middleware = store => next => action => {
+  // console.info("Applying middleware",action,next,store);
   if (typeof action === 'function')
     return action(store.dispatch, store.getState, api);
   const {request, types, ...rest} = action;

@@ -13,7 +13,7 @@ import {
 } from 'antd';
 
 const TextArea = (props) => {
-  return <Input.TextArea rows={6} {...props} />
+  return <Input.TextArea rows={10} {...props} />
 }
 
 export default TextArea;
